@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fråga 1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    Testing is fun
+    <nav>
+        <ul>
+            <li><a href="index.html" class="currentpage">Fråga 1</a></li>
+            <li><a href="page2.html">Fråga 2</a></li>
+            <li><a href="page3.html">Fråga 3</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="q1" class="question">
+            <h2>Beskriv boxmodellen och ge en kort förklaring av var och en av de CSS-egenskaper som ingår i den.</h2>
+            <p>Alla HTML element är behandlade som en box. Boxmodellen är modellen som alla CSS element är uppbyggda utav. Boxmodellen består utav 4 delar som tillsammans bygger upp ett ”box-element”.
+             <ul>
+                <li>Content box: I den här boxen finns innehållet, vare sig det är text, bilder videos osv. Storleken kan antingen bestämmas utav specifika höjd- och bredd-egenskaper eller så kan det ställas in automatiskt beroende på innehållet.</li>
+                <li>Padding box: Sitter utanför ‘Content box’ som en typ av inre marginal. Lägger man exempelvis in ’padding: 20px’ så blir det 20 pixlar omkring ’Content box’.</li>
+                <li>Border box: En ram som slår in både ’Content box’ och ’Padding’ box. </li>
+                <li>Margin box: En yttre marginal som lägger sig utanför ’border box’. Används oftast för att separera två eller fler olika element. </li>
+            </ul>
+        </p>
+
+        </div>
+        <div id="q2" class="question">
+            <h2>Beskriv också skillnaden mellan värdena content-box och border-box för CSS-egenskapen box-sizing.</h2>
+
+            <p>När man skriver in bredden i en content-box så är det endast ’content-box’ bredd som ändras, de andra boxarna justeras inte. För att få den verkliga storleken på elementet måste man då lägga ihop ’border-left + padding-left + content + padding-right  border-right’ och sedan samma sak i övre och under kant.  Däremot i ’border-box’ så fungerar det lite annorlunda. Den här typen av box introducerades senare än ’content-box’. Den fungerar på det sättet att istället för att behöva addera de olika värdena som i ’content-box’ så skriver man bara ut bredden man vill ha på elementet så kommer webbläsaren subtrahera ’padding’ och ’border’. Detta kan göra det enklare att planera upplägget. 
+                
+                </p>
+        </div>
+
+
+    </main>
 </body>
 </html>
