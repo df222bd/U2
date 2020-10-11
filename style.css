@@ -53,17 +53,17 @@ nav a {
 }
 
 nav a:link, nav a:visited {
-    color: #0d5712;
+    color: #2d2452;
 }
 
 nav a:hover, nav a:active {
-    background-color: #20985a;
-    color: #274606;
+    background-color: #9798e4;
+    color: #506836;
 }
 
 
 nav a.currentpage {
-    background-color: #f1d17d
+    background-color: #7df1ce
 }
 
 header {
