@@ -116,19 +116,38 @@ img {
 
     nav ul {
         flex-direction: column;
+        text-align: center;
     }
 
 
 
-    nav a.currentpage::before {
-        content: "";
-    }
+
 }
 
 @media screen and (max-width:500px) {
-    img {
-        width: 50%;
+    body {
+        display: block;
     }
+
+    #navlinks {
+        width: 80%; 
+        display: flex;
+        flex-flow: wrap;
+        flex-direction: row;
+        cursor: pointer;
+          
+    }
+
+    #navlinks img:hover {
+        transform: scale(1.3);
+        transition-duration: 1s;
+        
+    }
+
+    p#descr {
+        font-size: 1em;
+    }
+
 
 
 }
@@ -136,6 +155,20 @@ img {
 @media screen and (max-width: 420px) {
     body {
         display: block;
+    }
+
+    #navlinks {
+        width: 80%; 
+        display: flex;
+        flex-direction: column; 
+        cursor: pointer;
+    }
+
+    #navlinks img:hover {
+        transform: scale(1.2);
+        transition-duration: 1s;
+
+        
     }
     
     #menuicon {
@@ -156,5 +189,6 @@ img {
 
     nav ul {
         flex-direction: column;
+        text-align: left;
     }
 }
