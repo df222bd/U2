@@ -173,7 +173,7 @@ img {
     
     #menuicon {
         display: inline-block;
-        background-image: url(../img/menuicon.png);
+        background-image: url(img/menuicon.png);
         width: 24px;
         height:24px;
         cursor: pointer;
