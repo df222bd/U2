@@ -1,14 +1,11 @@
 @charset "UTF-8";
 
-html {
+html, body {
+    height: 100%;
     font-size: 18px;
 }
 
-html, body {
-    height: 100%;
-}
-
-html, body, nav, header, main, aside, footer, article, section, div {
+html, body, nav, header, main, footer, div {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
